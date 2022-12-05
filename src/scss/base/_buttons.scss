@@ -1,0 +1,39 @@
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap:12px;
+	white-space: nowrap;
+	border-radius: 5px;
+	height: 54px;
+	outline: none;
+	cursor:pointer;
+	transition: .3s;
+	border: 2px solid $ac2;
+	color: #fff;
+	background-color: $ac2;
+	font-size: 16px;
+	font-weight: 600;
+	&:hover{
+		background-color: $ac1;
+		border: 2px solid $ac1;
+	}
+	&:active{
+		background-color: $ac1hover;
+		border: 2px solid $ac1hover;
+	}
+}
+.btn.btn--outline{
+	color: $ac2;
+	background-color: #fff;
+	&:hover{
+		color: $ac1hover;
+		border: 2px solid $ac1hover;
+		background-color: #fff;
+	}
+	&:active{
+		color: $ac1hover;
+		border: 2px solid $ac1hover;
+		background-color: #fff;
+	}
+}
