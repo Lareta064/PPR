@@ -25,15 +25,13 @@
 		cursor:pointer;
 		flex-shrink: 0;
 		position: relative;
-		top:-48px
-		// position: absolute;
-		// top: 0;
-		// left: 30px;
-		// transform: translateY(-50%);
-		// z-index: 2;
+		top:-48px;
+		@media(max-width:1919px){
+			top:-30px;
+		}
 	}
 	@media(max-width:1919px){
-		padding: 50px 20px;
+		padding:10px 20px 50px 20px;
 		min-height: 170px;
 	}
 }
@@ -75,7 +73,7 @@
 		transition: .3s;
 		position: relative;
 		width: fit-content;
-		max-width: 34%;
+		max-width: 33.333%;
 		&:hover{
 			color: $ac1;
 			&:before{

@@ -1,4 +1,10 @@
-
+	new Vivus(
+		'header-svg',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+		);
 	// MENU
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#header-menu');
