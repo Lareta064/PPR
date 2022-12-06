@@ -1,0 +1,18 @@
+.circle-icon{
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $ac2;
+}
+.icon-elem{
+	display: flex;
+	align-items: center;
+	column-gap:10px;
+	&>*{flex-shrink: 0;}
+	.fl-col{
+		row-gap:5px;
+	}
+}
