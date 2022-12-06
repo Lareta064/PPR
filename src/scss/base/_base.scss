@@ -24,7 +24,15 @@
 	-ms-touch-action: none;
 	height: 100vh;
   }
-  
+  #overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;right: 0;
+	background-color: rgba(39, 44, 51, .5);
+	display: none;
+	&.active{display: block;}
+  }
  
   a,
   a:hover {

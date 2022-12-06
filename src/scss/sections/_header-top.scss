@@ -41,7 +41,38 @@
 	a.active{color: $ac1;}
 	a:hover{color: $ac2;}
 	@media(max-width: 1364px){column-gap: 20px;}
-	@media(max-width: 1023px){display: none!important;}
+	
+}
+.header-menu{
+@media(max-width: 1023px){
+		position: fixed;
+		top:0;
+		left: 0;
+		bottom: 0;
+		background-color: #fff;
+		padding-top: 70px;
+		width: 312px;
+		align-items: flex-start;
+		transform:translateX(-100%);
+		transition: .3s;
+		nav{
+			flex-direction: column;
+			overflow: hidden;
+			overflow-y: auto;
+			height: calc(100vh - 80px);
+			a:first-child{
+				border-top: 1px solid $sec2;
+			}
+		}
+		&.active{
+			transform:translateX(0);
+		}
+		a{
+			border-bottom: 1px solid $sec2;
+			padding: 24px 20px;
+			width: 100%;
+		}
+	}
 }
 .header-contacts{
 	gap:30px;
