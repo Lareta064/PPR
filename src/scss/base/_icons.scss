@@ -16,11 +16,16 @@
 		row-gap:5px;
 	}
 }
-.icon-full{
+.icon-full, .icon-close{
 	width: 18px;
 	height: 18px;
 	background-image: url('../img/full.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+}
+.icon-close{
+	width: 22px;
+	height: 22px;
+	background-image: url('../img/close-dark.png');
 }
