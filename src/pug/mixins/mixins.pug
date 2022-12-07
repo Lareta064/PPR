@@ -6,17 +6,17 @@ mixin header-menu(arg)
 			else
 				a(href=""+item.link) #{item.name}
 
-mixin servCard
-	.main-service-card(data-serv)
-		.circle-icon
-			.icon-full
-		.text-16 Разработка проектов организации строительства (ПОС)
+mixin servCard(text)
+	.main-service-card
+		.main-service-card__title
+			.circle-icon
+				.icon-full
+			.text-16 Разработка проектов организации строительства (ПОС)
 		
 		//=======ссылки для одной услуги =======
-		.main-service-description(data-desk)
-			.h14 Разработка проектов организации строительства (ПОС)
+		.main-service-description
+			.h14 !{text}
 			.main-service__list
-				.icon-close
 				a(href="#!") Разработка ППРк
 				a(href="#!") Разработка ППРв
 				a(href="#!") Разработка СГП
