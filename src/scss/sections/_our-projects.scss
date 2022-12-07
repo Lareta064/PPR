@@ -13,3 +13,18 @@
 			padding-bottom: 80px;
 		}
 }
+.our-projects{
+	position: relative;
+	&:after{
+		content: '';
+		height: 4px;
+		background-color: $ac1;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 64%;
+		@media (max-width: 767px) {
+			top: 57%;
+		}		
+	}
+}
