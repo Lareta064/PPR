@@ -1,0 +1,31 @@
+.main-about{
+	position: relative;
+	.main-about__img{
+		position: absolute;
+		top: 180px;
+		left: 0;
+		bottom: 0;
+		max-width: 980px;
+		
+		img{
+			object-fit: cover;
+			height: 100%;
+		}
+		@media(max-width:1919px){
+			width: 45%;
+		}
+	}
+	.container-560{
+		margin-left: auto;
+		padding-bottom: 50px;
+		@media (max-width: 1199px) {
+			margin-left: 0;
+		}
+		
+	}
+	@media (max-width: 1199px) {
+		.main-about__img{
+			display: none;
+		}
+	}
+}

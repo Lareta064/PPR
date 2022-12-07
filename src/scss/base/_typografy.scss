@@ -53,7 +53,12 @@
 .h10{
 	font-size: 16px;
 }
-
+.body1{
+	font-size: 16px;
+	@media (max-width: 1364px) {
+		font-size: 14px;
+	}
+}
 .text-14, .h14{
 	font-size: 14px;
 }
@@ -82,3 +87,15 @@
 		padding-bottom: 18px;
 	}
 }
+.text-wrapper{
+	
+	p+p, p + ul, ul + p, ul{
+		margin-top: 1em;
+	}
+	ul{
+		padding-left: 30px;
+		list-style-type: disc;
+		
+	}
+	
+}	
