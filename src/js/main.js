@@ -5,6 +5,41 @@
 			duration: 200,
 		}
 		);
+	new Vivus(
+		'factor1',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+	);
+	new Vivus(
+		'factor2',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+	);
+	new Vivus(
+		'factor3',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+	);
+	new Vivus(
+		'factor4',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+	);
+	new Vivus(
+		'factor5',
+		{
+			type: 'delayed',
+			duration: 200,
+		}
+	);
 	// MENU
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#header-menu');
@@ -73,10 +108,61 @@
 		dots: false,
 		navText: ["<div class='slider-prev'></div>", "<div class='slider-next'></div>"],
 		responsive: {
+			424:{
+				stagePadding:30,
+			},
 			
 			768: {
 				items: 2,
-				margin:30,
+				margin:40,
 			}
 		}
-	})
+	});
+	/*slider review */
+	$('.our-review-carousel').owlCarousel({
+		items:1,
+		margin:20,
+		smartSpeed: 600,
+		nav:true,
+		dots: false,
+		navText: ["<div class='slider-prev'></div>", "<div class='slider-next'></div>"],
+		responsive: {
+			424:{
+				stagePadding:100,
+			},
+			768: {
+				items: 3,
+				margin:30,
+			},
+			1024:{
+				items: 4,
+				margin:40,
+			}
+
+		}
+	});
+
+	/*slider sertificate */
+	$('.our-sertificate-carousel').owlCarousel({
+		items:1,
+		margin:20,
+		smartSpeed: 600,
+		nav:true,
+		dots: false,
+		navText: ["<div class='slider-prev'></div>", "<div class='slider-next'></div>"],
+		responsive: {
+			424:{
+				stagePadding:100,
+			},
+			768: {
+				items: 3,
+				margin:30,
+			},
+			1024:{
+				items: 4,
+				margin:40,
+			}
+
+		}
+	});
+	

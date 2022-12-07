@@ -25,10 +25,10 @@
 .section-title{
 	margin-bottom: 60px;
 	.h10{text-transform: uppercase;}
-	&>*+*{margin-top: 20px;}
+	.h10 + .h4{margin-top: 20px;}
 	
 	@media (max-width: 767px) {
-		&>*+*{margin-top: 14px;}
+		.h10 + .h4{margin-top: 14px;}
 		margin-bottom: 30px;
 	}
 }
