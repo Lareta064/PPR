@@ -63,3 +63,20 @@
 			});
 		}
 	}
+
+	/*slider our projects */
+	$('.our-projects-carousel').owlCarousel({
+		items:1,
+		margin:20,
+		smartSpeed: 600,
+		nav:true,
+		dots: false,
+		navText: ["<div class='slider-prev'></div>", "<div class='slider-next'></div>"],
+		responsive: {
+			
+			768: {
+				items: 2,
+				margin:30,
+			}
+		}
+	})

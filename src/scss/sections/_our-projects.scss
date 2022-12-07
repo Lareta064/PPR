@@ -1,0 +1,15 @@
+.our-projects-card{
+	border: 1px solid $sec1;
+	.our-projects-card__text{
+		border-top: 1px solid $sec1;
+		padding: 40px 30px;
+		@media (max-width: 1199px) {
+			padding: 20px;
+		}
+	}
+}
+.our-projects-wrapper{
+	@media (max-width: 767px) {
+			padding-bottom: 80px;
+		}
+}

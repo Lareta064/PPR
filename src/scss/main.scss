@@ -6,10 +6,12 @@
 @import "base/_icons";
 @import "base/_menu-toggle";
 
+@import "blocks/_owl-carousel";
+
 //sections
 
  @import "sections/header-top";
  @import "sections/header-banner-main.scss";
  @import "sections/main-service.scss";
  @import "sections/main-about.scss";
-
+ @import "sections/our-projects.scss";

@@ -49,9 +49,13 @@
 .h6, .h8, .h10, .b1-s, .b2-s,.b3-s{font-weight: 600;}
 .h9{
 	font-size: 18px;
+	@media (max-width: 1199px) {
+		font-size: 14px;
+	}
 }
 .h10{
 	font-size: 16px;
+	
 }
 .body1{
 	font-size: 16px;
