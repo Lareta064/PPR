@@ -2,5 +2,23 @@
 	.header-banner-content{
 		min-height: 675px;
 	}
-	
+	.header-banner__title .h8{
+		max-width: 550px;
+	}
+	.btn{margin-top: 80px;}
+	.header-banner__img{
+		img{
+			width: auto;
+			object-fit: contain;
+			height:100%;
+		}
+	}
+	@media (max-width: 1199px) {
+	.header-banner-content{
+		min-height: unset;
+	}
+	}
+	@media (max-width: 767px) {
+		.btn{margin-top: 30px;}
+	}
 }
