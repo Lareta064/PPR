@@ -1,4 +1,29 @@
+	
+	void function MyFunction(){
+		const container = document.querySelector('.price-cards');
+		if(container){
+			const nmbrOfElements = container.querySelectorAll('.price-cards__item').length;
+		
+			switch (true) {
+				case (nmbrOfElements === 5):
+					container.classList.add(`price-cards-grid`)
+					break;
+			
+				case (nmbrOfElements % 3 === 0):   
+					container.classList.add(`price-cards-three`)
+					break;
+					
+				default:
+					// container.classList.add(``)
+					break;
+			}
+		}
+		}();
+	
+	
+	/*  fybvbhjdfybt ымп  vivus.js*/
 	const headerSvg1 = document.querySelector('#header-svg');
+	const serviceHeaderSvg = document.querySelector('#service-svg');
 	const factorSvg1 = document.querySelector('#factor1');
 	const factorSvg2 = document.querySelector('#factor2');
 	const factorSvg3 = document.querySelector('#factor3');
@@ -7,6 +32,15 @@
 	if(headerSvg1){
 		new Vivus(
 			'header-svg',
+			{
+				type: 'delayed',
+				duration: 200,
+			}
+			);
+		}
+	if(serviceHeaderSvg){
+		new Vivus(
+			'service-svg',
 			{
 				type: 'delayed',
 				duration: 200,

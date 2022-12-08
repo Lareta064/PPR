@@ -87,7 +87,7 @@
 	grid-column-gap: 40px;
 	grid-row-gap: 40px;
 	
-	@media (max-width: 991px) {
+	@media (max-width: 1023px) {
 		grid-row-gap: 20px;
 	}
 	@media (max-width: 767px) {
@@ -96,7 +96,7 @@
 }
 .price-cards.price-cards-three{
 	grid-template-columns: 1fr 1fr 1fr;
-	@media (max-width: 1199px) {
+	@media (max-width: 1364px) {
 		grid-template-columns: 1fr 1fr ;
 	}
 	@media (max-width: 767px) {
@@ -107,10 +107,10 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 
-	@media (max-width: 991px) {
+	@media (max-width: 1023px) {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	@media (max-width: 991px) {
+	@media (max-width: 1023px) {
 		.price-cards__item:nth-child(1){ grid-area: unset }
 		.price-cards__item:nth-child(2)  { grid-area: unset }
 		.price-cards__item:nth-child(3){ grid-area: unset }
