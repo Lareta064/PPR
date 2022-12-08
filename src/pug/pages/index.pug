@@ -1,15 +1,14 @@
 extends ../layouts/layout.pug
 
 block content
-	include ../sections/_header-top.pug
-	include ../sections/service-page/_header-banner-inner.pug
-	
-	include ../sections/service-page/_object-group
-	include ../sections/service-page/_project-composition
-	include ../sections/service-page/_requirement
-	
-	include ../sections/service-page/_inner-price.pug
+	include ../sections/_header-top.pug	
+	include ../sections/_header-banner-main.pug
+	include ../sections/_main-service.pug
+	include ../sections/_main-about.pug
 	include ../sections/_our-projects.pug
+	include ../sections/_main-review.pug
+	include ../sections/_our-sertificate.pug
+	include ../sections/_price.pug
 	include ../sections/_feedback.pug
 	include ../sections/_contacts.pug
 	include ../sections/_footer.pug
@@ -18,4 +17,4 @@ block content
 	
 	
 block variables
-	-var title = "Услуги";
+	-var title = "Главная";
