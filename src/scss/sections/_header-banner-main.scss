@@ -1,8 +1,11 @@
 .header-banner{
 	padding-top: 55px;
 	padding-bottom: 55px;
+	@media (max-width: 1023px){
+		padding-top: 126px;
+	}
 	@media (max-width: 767px) {
-		padding-top: 40px;
+		padding-top: 111px;
 		padding-bottom: 40px;
 	}
 }

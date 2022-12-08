@@ -17,12 +17,21 @@
 	font-family: 'Montserrat';
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
+
   }
   .noscroll {
 	overflow: hidden;
 	touch-action: none;
 	-ms-touch-action: none;
 	height: 100vh;
+	.header-top:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: -1px;
+		left: 0;	right: 0;
+		background-color: rgba(39, 44, 51, .5);
+	}
   }
   #overlay{
 	position: fixed;
@@ -32,6 +41,7 @@
 	background-color: rgba(39, 44, 51, .5);
 	display: none;
 	&.active{display: block;}
+	z-index: 2;
   }
  
   a,
