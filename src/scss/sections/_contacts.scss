@@ -1,0 +1,24 @@
+.contacts-wrapper{
+	display: flex;
+	justify-content: space-between;
+	.contacts-block {
+		max-width: 380px;
+		&>*+*{margin-top: 14px;}
+		a{
+			color: $pr;
+			font-weight: 600;
+			display: block;
+		}
+	}
+	@media (max-width: 1199px) {
+		flex-wrap:wrap;
+		gap:30px;
+	}
+	@media (max-width: 767px) {
+		
+		.contacts-block{
+			width: 100%;
+		}
+		
+	}
+}
