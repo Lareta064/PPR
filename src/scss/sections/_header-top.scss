@@ -5,6 +5,16 @@
 		// width: auto;
 		object-fit: contain;
 	}
+	@media(max-width: 1364px){
+		img{
+			width: 240px;
+		}
+	}
+	@media(max-width: 1199px){
+		img{
+			width: 160px;
+		}
+	}
 }
 .header-top{
 	padding-top: 34px;
@@ -14,16 +24,16 @@
 	background-color: #fff;
 	top:0;
 	z-index: 3;
-	@media(max-width: 1364px){
-		.logo img{
-			width: 240px;
-		}
-	}
-	@media(max-width: 1199px){
-		.logo img{
-			width: 160px;
-		}
-	}
+	// @media(max-width: 1364px){
+	// 	.logo img{
+	// 		width: 240px;
+	// 	}
+	// }
+	// @media(max-width: 1199px){
+	// 	.logo img{
+	// 		width: 160px;
+	// 	}
+	// }
 	@media (max-width: 1023px) {
 		padding-top: 16px;
 		padding-bottom: 16px;
@@ -35,7 +45,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
-.header-menu nav{
+.main-menu{
 	display: flex;
 	align-items: center;
 	column-gap: 30px;
@@ -44,11 +54,14 @@
 	}
 	a.active{color: $ac1;}
 	a:hover{color: $ac2;}
+}
+.header-menu .main-menu{
+	
 	@media(max-width: 1364px){column-gap: 20px;}
 	
 }
 .header-menu{
-@media(max-width: 1023px){
+	@media(max-width: 1023px){
 		position: fixed;
 		top:0;
 		left: 0;
@@ -59,7 +72,7 @@
 		align-items: flex-start;
 		transform:translateX(-100%);
 		transition: .3s;
-		nav{
+		.main-menu{
 			flex-direction: column;
 			overflow: hidden;
 			overflow-y: auto;

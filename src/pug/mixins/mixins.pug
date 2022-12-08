@@ -1,5 +1,5 @@
 mixin header-menu(arg)
-	nav
+	nav.main-menu
 		each item in arg
 			if item.addCl !==''
 				a(href=""+item.link).active #{item.name}
