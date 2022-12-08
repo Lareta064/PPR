@@ -35,12 +35,17 @@
 }
 .text-wrapper{
 	
-	p+p, p + ul, ul + p, ul{
+	p+p, p + ul, ul + p, ul,p + ol, ol + p, ol{
 		margin-top: 1em;
 	}
 	ul{
 		padding-left: 30px;
 		list-style-type: disc;
+		
+	}
+	ol{
+		padding-left: 30px;
+		
 		
 	}
 	
