@@ -33,3 +33,15 @@
 		margin-bottom: 30px;
 	}
 }
+.text-wrapper{
+	
+	p+p, p + ul, ul + p, ul{
+		margin-top: 1em;
+	}
+	ul{
+		padding-left: 30px;
+		list-style-type: disc;
+		
+	}
+	
+}

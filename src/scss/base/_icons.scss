@@ -48,10 +48,17 @@
 	fill: white;
 	object-fit: contain;
 }
+// кривая стрелка на кнопке
 .svg-arr{
 	width: 19px;
 	height: 18px;
 	fill: #fff;
+}
+// галочка на кнопке зеленая
+.svg-check{
+	width: 18px;
+	height: 18px;
+	fill:$ac2;
 }
 .icon-plus{
 	width: 15px;
