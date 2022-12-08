@@ -88,4 +88,8 @@
 	.agree-text{
 		max-width: 290px;
 	}
+	@media (max-width: 767px) {
+		display: block;
+		&>*+*{margin-top: 14px; width: 100%;}
+	}
 }

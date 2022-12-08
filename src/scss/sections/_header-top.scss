@@ -10,6 +10,10 @@
 	padding-top: 34px;
 	padding-bottom: 34px;
 	border-bottom: 1px solid $sec2;
+	position: sticky;
+	background-color: #fff;
+	top:0;
+	z-index: 3;
 	@media(max-width: 1364px){
 		.logo img{
 			width: 240px;

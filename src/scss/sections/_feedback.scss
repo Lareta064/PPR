@@ -7,8 +7,14 @@
 	.feedback-form{
 		padding-top: 30px;
 	}
+	@media (max-width: 1199px) {
+		display: block;
+	}
 }
 .feedback .feedback-content__text{
 	width: 50%;
 	max-width: 609px;
+	@media (max-width: 1199px) {
+		width: 100%;
+	}
 }
