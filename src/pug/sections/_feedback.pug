@@ -1,0 +1,34 @@
+section.section-accent.feedback
+	.container
+		.feedback-content
+			.feedback-content__text
+				.section-title
+					.h10 Отзывы
+					.h4 Вам нужна качественно разработанная документация которая пройдёт 100% согласование?
+			
+			.feedback-content__form.container-560
+				p.body1  Для составления коммерческого предложения, оптимизированного под ваш случай, рекомендуем вам заказать обратный звонок от нашего спезиалиста:
+				.feedback-form
+					form(action="" method="method")
+						.form-item
+							.fake-placeholder Телефон
+							input.form-input(type="text" )
+							
+							//====== дополнительный текст под инпутом серого цвета имеет класс ''subinput'.  Если добавить класс 'error', то цвет текста под инпутом станет красным
+								<p class="subinput  error" > какой-то текст</p>
+						.form-item
+							.form-item
+								.fake-placeholder Имя
+								input.form-input(type="text" )
+						
+						.form-footer.form-footer--flex
+							.agree-text.fake-checkbox-item
+								label.label
+									input(type="checkbox" name="agree")
+									span.fake-checkbox
+									p Я ознакомлен и согласен с #[a(href="#!") политикой конфиденциальности]
+							button(type="submit").btn.btn--outline.btn--outline-white
+								span Отправить
+								svg.svg-arrow-right
+									use(xlink:href="./img/svg-sprite.svg#svg-arrow-right")
+						

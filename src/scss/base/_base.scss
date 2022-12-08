@@ -137,7 +137,7 @@ section+section{
 	background-color: $sec3;
 }
 .section-accent{
-	background-color: $sec1;
+	background-color: $ac1;
 	color: #fff;
 }
 .section-gray,.section-accent{
@@ -148,6 +148,13 @@ section+section{
 		padding-bottom: 60px;
 	}
 }
+
 .container-560{
 	max-width: 560px;
+}
+.p-100{
+	padding-top: 100px;
+	@media (max-width: 767px) {
+		padding-top: 60px;
+	}
 }

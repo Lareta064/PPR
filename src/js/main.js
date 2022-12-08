@@ -2,42 +2,42 @@
 		'header-svg',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 		);
 	new Vivus(
 		'factor1',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 	);
 	new Vivus(
 		'factor2',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 	);
 	new Vivus(
 		'factor3',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 	);
 	new Vivus(
 		'factor4',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 	);
 	new Vivus(
 		'factor5',
 		{
 			type: 'delayed',
-			duration: 200,
+			duration: 100,
 		}
 	);
 	// MENU
@@ -45,9 +45,6 @@
 	const mobMenu = document.querySelector('#header-menu');
 	const overlayBlock = document.querySelector('#overlay');
 	const bodyEl = document.body;
-	
-
-
 	if (menuToggle) {
 		menuToggle.addEventListener('click', function () {
 			if (this.classList.contains('active')) {
@@ -165,4 +162,21 @@
 
 		}
 	});
-	
+	/*================ forms ================= */
+	const formItems = document.querySelectorAll('.form-input')
+
+    for(let item of formItems) {
+        const thisParent = item.closest('.form-item')
+        const thisPlaceholder = thisParent.querySelector('.fake-placeholder')
+        item.addEventListener('focus', function() {
+            thisPlaceholder.classList.add('active')
+        })
+        item.addEventListener('blur', function() {
+            if(item.value.length > 0) {
+                thisPlaceholder.classList.add('active')
+            }
+            else {
+                thisPlaceholder.classList.remove('active')
+            }
+        })
+    }

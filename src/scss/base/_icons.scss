@@ -34,3 +34,18 @@
 	width: 18px;
 	height: 18px;
 }
+.svg-arrow-right{
+	width: 24px;
+	height: 24px;
+	fill: white;
+	object-fit: contain;
+}
+.icon-plus{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border:2px solid $ac2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

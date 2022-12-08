@@ -1,0 +1,91 @@
+.form-item{
+	position: relative;
+	.fake-placeholder{
+		position: absolute;
+		pointer-events: none;
+		left: 0;
+		top: 10px;
+		font-size: 14px;
+		color: $sec1;
+		transition: .5s;
+		&.active{
+			font-size: 12px;
+			opacity: .5;
+			top: -6px;
+		}
+	}
+	.subinput{
+		margin-top: 4px;
+		font-size: 10px;
+	}
+	.error{
+		color: $err;
+		font-size: 10px;
+		margin-top: 4px;
+	}
+	
+}
+.form-item +.form-item{
+	margin-top: 15px;
+}
+.form-input{
+	width: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid $sec1;
+	height: 46px;
+	background-color: transparent;
+	color: $sec;
+	font-size: 16px;
+}
+.fake-checkbox-item .fake-checkbox{
+	width: 16px;
+	height: 16px;
+	border-radius: 4px;
+	display: inline-block;
+	border: 1px solid white;
+	flex-shrink: 0;
+	background-color:transparent;
+	outline: 0px solid rgba(255,255,255,1); 
+    outline-offset: 0; 
+	transition: .2s;
+}
+.fake-checkbox-item input[type="checkbox"]:checked~.fake-checkbox{
+	outline: 4px solid rgba(255,255,255,1); 
+    outline-offset: -10px;
+}
+.fake-checkbox-item input[type="checkbox"]{
+	position: absolute;
+	width: 0.01px;
+	height: 0.01px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.fake-checkbox-item .label{
+	display: flex;
+	align-items: flex-start;
+	padding-left: 7px;
+	position: relative;
+	font-size: 14px;
+	span+p{margin-left: 7px;}
+	p>a{
+		color: $sec1;
+		&:hover{
+			text-decoration: underline;
+			display: inline;
+		}
+	}
+
+}
+.form-footer{
+	padding-top: 14px;
+}
+.form-footer.form-footer--flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.agree-text{
+		max-width: 290px;
+	}
+}
