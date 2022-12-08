@@ -78,6 +78,17 @@
 		}
 	}
 }
+.block-contacts{
+	gap:30px;
+	a{color: $pr; transition: .3s;}
+	a:hover{
+		color: $ac1;
+	}
+	
+	@media(max-width: 1364px){gap: 20px;}
+	@media(max-width: 1199px){gap: 10px;}
+	
+}
 .header-contacts{
 	gap:30px;
 	a{color: $pr; transition: .3s;}

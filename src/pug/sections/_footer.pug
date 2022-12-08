@@ -1,12 +1,10 @@
-.header-top
+footer.footer
 	.container-large
-		.header-top__content
-			.menu-toggle.icon-elem
-				span
-			.header-logo
+		.footer-top
+			.footer-logo
 				a(href="#!").logo
 					img(src="./img/logo.png"  alt="logo")
-			.header-menu#header-menu
+			.footer-menu
 				+header-menu([
 					{link:'#!', addCl:'active', name: 'О компании'}, 
 					{link:'#!', addCl:'', name: 'Услуги' }, 
@@ -15,7 +13,7 @@
 					{link:'#!', addCl:'', name: 'Сертификаты' },
 					{link:'#!', addCl:'', name: 'Контакты' },
 					])
-			.header-contacts
+			.footer-contacts
 				.block-contacts.fl-y-center
 					.icon-elem
 						.text-bold.text-16
@@ -30,3 +28,5 @@
 						
 						a(href="tel:+7 999 888 77 66").circle-icon
 							img(src="./img/call.png", width="18" alt="icon")
+
+		.footer-copyright
