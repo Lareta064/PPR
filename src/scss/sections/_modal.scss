@@ -1,0 +1,67 @@
+.modal-frame-wrapper[frame-modal].modal-frame-right{
+	opacity: 0;
+	animation-name:slowOpen;
+	animation-duration:.5s;
+	animation-fill-mode: forwards;
+	.modal-frame{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		max-width: 540px;
+		margin: 0;
+		width: 100%;
+		background-color: #fff;
+		padding: 34px;
+		padding-left: 80px;
+		padding-right: 80px;
+		[frame-close]{
+			position: absolute;
+			top: 34px;
+			right: 34px;
+			z-index: 2;
+			transition: .2s;
+			&:hover{opacity: .5;}
+		}
+		@media (max-width: 767px) {
+			max-width: 320px;padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 84px;
+			[frame-close]{right: 20px;}
+
+		}
+	}
+	
+}
+
+.modal-frame-wrapper[frame-modal].w-700 .modal-frame{
+	max-width: 700px;
+}
+.modal-frame-wrapper[frame-modal]{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	z-index: 5;
+	display: none;
+	overflow: hidden;
+	overflow-y: auto;
+	background-color: rgba(39, 44, 51, .5);
+	
+}
+[frame-modal].visible{
+	display: block;
+}
+
+[frame-close]{cursor:pointer}
+@keyframes slowOpen{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 1;
+	}
+}

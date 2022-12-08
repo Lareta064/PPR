@@ -1,0 +1,32 @@
+.modal-frame-wrapper.modal-frame-right(frame-modal="modal-form")
+	.modal-frame.flex-column
+		.modal-frame__head.flex-box.flex-y-center.flex-between
+			.circle-icon(frame-close)
+				.icon-close-white
+			.section-title
+				.h4.decor-line Обратная связь
+				p.body1 Укажите свои контактные данные и мы постараемся связаться с вами как можно раньше
+				//========== feedback-form ===========
+			.feedback-form.feedback-form--light
+				form(action="" method="method")
+					.form-item
+						.fake-placeholder Телефон
+						input.form-input(type="text" )
+						
+						//====== дополнительный текст под инпутом серого цвета имеет класс ''subinput'.  Если добавить класс 'error', то цвет текста под инпутом станет красным
+							<p class="subinput  error" > какой-то текст</p>
+					.form-item
+						.form-item
+							.fake-placeholder Имя
+							input.form-input(type="text" )
+					
+					.form-footer.footer-col
+						.agree-text.fake-checkbox-item
+							label.label
+								input(type="checkbox" name="agree")
+								span.fake-checkbox
+								p Я ознакомлен и согласен с #[a(href="#!") политикой конфиденциальности]
+						button(type="submit").btn.btn-38.w-100
+							span Отправить
+							svg.svg-arrow-right
+								use(xlink:href="./img/svg-sprite.svg#svg-arrow-right")

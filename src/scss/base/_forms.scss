@@ -54,6 +54,15 @@
 	outline: 4px solid rgba(255,255,255,1); 
     outline-offset: -10px;
 }
+.feedback-form--light {
+	.fake-checkbox-item .fake-checkbox{
+		border: 1px solid $sec;
+	}
+	.fake-checkbox-item input[type="checkbox"]:checked~.fake-checkbox{
+	outline: 4px solid $sec;;
+    outline-offset: -10px;
+}
+}
 .fake-checkbox-item input[type="checkbox"]{
 	position: absolute;
 	width: 0.01px;
@@ -81,6 +90,7 @@
 .form-footer{
 	padding-top: 14px;
 }
+.footer-col{.btn{margin-top: 14px;}}
 .form-footer.form-footer--flex{
 	display: flex;
 	align-items: center;

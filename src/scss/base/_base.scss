@@ -24,6 +24,10 @@
 	touch-action: none;
 	-ms-touch-action: none;
 	height: 100vh;
+	padding-right: 17px;
+	@media (max-width: 1199px) {
+	padding-right: 0;
+	}
 	.header-top:after{
 		content: '';
 		position: absolute;

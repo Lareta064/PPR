@@ -21,14 +21,15 @@
 .text-right{
 	text-align: right;
 }
+.w-100{width: 100%;}
 .text-center{text-align: center;}
 .section-title{
 	margin-bottom: 60px;
 	.h10{text-transform: uppercase;}
-	.h10 + .h4{margin-top: 20px;}
+	.h10 + .h4, .h4 + p{margin-top: 20px;}
 	
 	@media (max-width: 767px) {
-		.h10 + .h4{margin-top: 14px;}
+		.h10 + .h4, .h4 + p{margin-top: 14px;}
 		margin-bottom: 30px;
 	}
 }
