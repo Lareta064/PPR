@@ -1,6 +1,5 @@
-.review-card{
+.review-card, .sertificate-card{
 	border: 1px solid $sec2;
-	transition: .5s;
 	&:hover{
 		box-shadow: 0px 14px 40px rgba(83, 83, 90, 0.09);
 		

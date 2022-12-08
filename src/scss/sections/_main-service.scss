@@ -1,8 +1,10 @@
 .main-service{
-	padding-top: 19px;
+	padding-top: 170px;
+	margin-top: -120px;
 	background-color: #fff;
 	@media (max-width: 1199px) {
 		padding-top: 0;
+		margin-top: 0;
 	}
 }
 .main-service-content{

@@ -1,4 +1,41 @@
-	
+document.addEventListener("DOMContentLoaded", function(){  
+        
+        $(window).scroll(function () {
+			if($(window).width() > 1023 ){
+            onScrollHandle();}
+        });
+
+        function onScrollHandle() {
+          
+            var currentScrollPos = $(document).scrollTop();
+
+            //Iterate through all node
+			
+            $('#header-menu a').each(function () {
+                var curLink = $(this);
+				
+                var refElem = $(curLink.attr('href'));
+				
+
+                //Compare the value of current position and the every section position in each scroll
+                if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
+					
+                    //Remove class active in all nav
+                    $('#header-menu a').removeClass("active");
+                    //Add class active
+                    curLink.addClass("active");
+					
+                }
+                else {
+                    curLink.removeClass("active");
+                }
+            });
+        }
+	// $().fancybox({
+	// 	selector : '.owl-item:not(.cloned) a'
+	// });
+ 
+	/*класс в зависимости от количества карточек*/
 	void function MyFunction(){
 		const container = document.querySelector('.price-cards');
 		if(container){
@@ -133,7 +170,7 @@
 	/*============ показать описание услуги ============ */
 	const servCards = document.querySelectorAll('[data-serv]');
 	const servCardsDesk = document.querySelectorAll('[data-desk]');
-	console.log(servCards);
+	
 	if(servCards.length > 0){
 		for(let item of servCards){
 			const cardIcon = item.querySelector('.circle-icon');
@@ -245,7 +282,7 @@
           for(let item of  modalFrames){
             item.classList.remove('visible');
             
-            bodyEl.classList.remove('noscroll');
+            bodyEl.classList.remove('lock');
 			
 			
           }
@@ -256,7 +293,7 @@
             const frameAttr =frame.getAttribute('frame-modal');	
             if(frameAttr == itemAttr){
               frame.classList.add('visible');
-              bodyEl.classList.add('noscroll');
+              bodyEl.classList.add('lock');
 			 
             }
           }
@@ -267,7 +304,7 @@
         item.addEventListener('click', function(e){
           e.preventDefault();
           item.closest('[frame-modal]').classList.remove('visible');
-          bodyEl.classList.remove('noscroll');
+          bodyEl.classList.remove('lock');
 		  
 		  
         });
@@ -277,9 +314,10 @@
 		frame.addEventListener('click', function(e){
 			if(e.target === e.currentTarget){
 				this.classList.remove(`visible`)
-				bodyEl.classList.remove('noscroll');
+				bodyEl.classList.remove('lock');
 			}
 		});
 	}
 
     }
+});

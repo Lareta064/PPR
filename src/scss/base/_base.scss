@@ -19,6 +19,12 @@
 	-webkit-font-smoothing: antialiased;
 
   }
+  body.compensate-for-scrollbar{
+	padding-right: 17px;
+	@media (max-width: 1199px) {
+	padding-right: 0;
+	}
+  }
   .noscroll {
 	overflow: hidden;
 	touch-action: none;
@@ -36,6 +42,16 @@
 		left: 0;	right: 0;
 		background-color: rgba(39, 44, 51, .5);
 	}
+  }
+  .lock{
+		overflow: hidden;
+		touch-action: none;
+		-ms-touch-action: none;
+		height: 100vh;
+		padding-right: 17px;
+		@media (max-width: 1199px) {
+		padding-right: 0;
+		}
   }
   #overlay{
 	position: fixed;
