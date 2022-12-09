@@ -1,66 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){  
-        
-        $(window).scroll(function () {
-			if($(window).width() > 1023 ){
-            onScrollHandle();}
-        });
 
-        function onScrollHandle() {
-          
-            var currentScrollPos = $(document).scrollTop();
-
-            //Iterate through all node
-			
-            $('#header-menu a').each(function () {
-                var curLink = $(this);
-				
-                var refElem = $(curLink.attr('href'));
-				
-
-                //Compare the value of current position and the every section position in each scroll
-                if (refElem.position().top <= currentScrollPos && refElem.position().top + refElem.height() > currentScrollPos) {
-					
-                    //Remove class active in all nav
-                    $('#header-menu a').removeClass("active");
-                    //Add class active
-                    curLink.addClass("active");
-					
-                }
-                else {
-                    curLink.removeClass("active");
-                }
-            });
-        }
-	// $().fancybox({
-	// 	selector : '.owl-item:not(.cloned) a'
-	// });
- 
-	/*класс в зависимости от количества карточек*/
-	void function MyFunction(){
-		const container = document.querySelector('.price-cards');
-		if(container){
-			const nmbrOfElements = container.querySelectorAll('.price-cards__item').length;
-		
-			switch (true) {
-				case (nmbrOfElements === 5):
-					container.classList.add(`price-cards-grid`)
-					break;
-			
-				case (nmbrOfElements % 3 === 0):   
-					container.classList.add(`price-cards-three`)
-					break;
-					
-				default:
-					// container.classList.add(``)
-					break;
-			}
-		}
-		}();
-	
-	
 	/*  fybvbhjdfybt ымп  vivus.js*/
 	const headerSvg1 = document.querySelector('#header-svg');
-	const serviceHeaderSvg = document.querySelector('#service-svg');
+	const serviceSvg = document.querySelector('#service-svg');
 	const factorSvg1 = document.querySelector('#factor1');
 	const factorSvg2 = document.querySelector('#factor2');
 	const factorSvg3 = document.querySelector('#factor3');
@@ -75,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			}
 			);
 		}
-	if(serviceHeaderSvg){
+	if(serviceSvg){
 		new Vivus(
 			'service-svg',
 			{
@@ -166,7 +108,28 @@ document.addEventListener("DOMContentLoaded", function(){
 
 		});
 	}
-
+     
+	/*класс в зависимости от количества карточек*/
+	void function MyFunction(){
+		const container = document.querySelector('.price-cards');
+		if(container){
+			const nmbrOfElements = container.querySelectorAll('.price-cards__item').length;
+		
+			switch (true) {
+				case (nmbrOfElements === 5):
+					container.classList.add(`price-cards-grid`)
+					break;
+			
+				case (nmbrOfElements % 3 === 0):   
+					container.classList.add(`price-cards-three`)
+					break;
+					
+				default:
+					// container.classList.add(``)
+					break;
+			}
+		}
+		}();
 	/*============ показать описание услуги ============ */
 	const servCards = document.querySelectorAll('[data-serv]');
 	const servCardsDesk = document.querySelectorAll('[data-desk]');

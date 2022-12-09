@@ -1,0 +1,32 @@
+.header-top
+	.container-large
+		.header-top__content
+			.menu-toggle.icon-elem
+				span
+			.header-logo
+				a(href="index.html").logo
+					img(src="./img/logo.png"  alt="logo")
+			.header-menu#header-menu
+				+header-menu([
+					{link:'index.html#about', addCl:'', name: 'О компании'}, 
+					{link:'index.html#service', addCl:'active', name: 'Услуги' }, 
+					{link:'#projects', addCl:'', name: 'Выполненные работы'}, 
+					{link:'index.html#review', addCl:'', name: 'Отзывы' },
+					{link:'index.html#sertificate', addCl:'', name: 'Сертификаты' },
+					{link:'#contacts', addCl:'', name: 'Контакты' },
+					])
+			.header-contacts
+				.block-contacts.fl-y-center
+					.icon-elem
+						.text-bold.text-16
+							a(href="mailto: razrabotkaPPR@bitrix24.ru") razrabotkaPPR@bitrix24.ru
+						
+						a(href="mailto: razrabotkaPPR@bitrix24.ru").circle-icon
+							img(src="./img/mail.png", width="18" alt="icon")
+					
+					.icon-elem
+						.text-bold.text-16.fl-col
+							a(href="tel:+7 999 888 77 66") +7 999 888 77 66
+						
+						a(href="tel:+7 999 888 77 66").circle-icon
+							img(src="./img/call.png", width="18" alt="icon")
