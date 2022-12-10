@@ -61,27 +61,28 @@
 	&>*{width: 100%;}
 	padding-bottom: 180px;
 	.main-service{margin-top: auto;}
-	height: 1080px;
+	// height: 1080px;
+	min-height: 100vh;
 	@media(max-width: 1599px){
-		height: 864px;
+		// height: 864px;
 		padding-bottom: 100px;
 		
 	}
 	
 	@media(max-width: 1535px){
-		height: 900px;
+		// height: 900px;
 		
 	}
 	@media(max-width: 1439px){
-		height: 768px;
+		// height: 768px;
 		
 	}
 	@media(max-width: 1364px){
-		height: 800px;
+		// height: 800px;
 		
 	}
 	@media(max-width: 1199px){
-		height: unset;
+		min-height: unset;
 		
 	}
 	@media(max-width: 1023px){

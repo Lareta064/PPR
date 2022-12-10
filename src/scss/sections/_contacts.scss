@@ -53,3 +53,12 @@
 	}
 
 }
+.block-contacts{
+	.icon-elem{cursor:pointer;
+		&:hover{
+			.circle-icon{
+				background-color: $ac1;
+			}
+		}
+	}
+}
