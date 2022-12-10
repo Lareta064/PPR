@@ -2,7 +2,7 @@
 	position: relative;
 	.main-about__img{
 		position: absolute;
-		top: 180px;
+		top: 0;
 		left: 0;
 		bottom: 0;
 		max-width: 980px;
@@ -18,12 +18,20 @@
 	.container-560{
 		margin-left: auto;
 		padding-bottom: 50px;
-		@media (max-width: 1199px) {
+		@media (max-width: 1023px) {
+			margin-left: 0;
+		}
+		@media (max-width: 1023px) {
 			margin-left: 0;
 		}
 		
 	}
 	@media (max-width: 1199px) {
+		.main-about__img {
+			width: 38%;
+		}
+	}
+	@media (max-width: 1023px) {
 		.main-about__img{
 			display: none;
 		}
