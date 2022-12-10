@@ -1,6 +1,31 @@
 document.addEventListener("DOMContentLoaded", function(){  
 
-	/*  fybvbhjdfybt ымп  vivus.js*/
+	// active class of menu items onscroll
+	window.addEventListener('scroll', () => {
+		let scrollDistance = window.scrollY;
+
+		if (window.innerWidth > 1023) {
+			document.querySelectorAll('.section').forEach((el, i) => {
+				if (el.offsetTop - document.querySelector('.header-top').clientHeight <= scrollDistance) {
+					document.querySelectorAll('#header-menu a').forEach((el) => {
+						if (el.classList.contains('active')) {
+							el.classList.remove('active');
+						}
+					});
+					const thisId = "#" + el.getAttribute('id');
+					
+
+					document.querySelectorAll('#header-menu a').forEach((elem, i) => {
+						const linkHref = elem.getAttribute('href');
+						if(thisId == linkHref ){
+							elem.classList.add('active');
+						}
+					});
+				}
+			});
+		}
+	});
+		/*  fybvbhjdfybt ымп  vivus.js*/
 	const headerSvg1 = document.querySelector('#header-svg');
 	const serviceSvg = document.querySelector('#service-svg');
 
