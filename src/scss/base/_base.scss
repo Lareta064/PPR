@@ -49,9 +49,15 @@
 		touch-action: none;
 		-ms-touch-action: none;
 		height: 100vh;
-		padding-right: 17px;
+		padding-right: 18px;
+		.header-top{
+			padding-right: 18px;
+		}	
 		@media (max-width: 1199px) {
 		padding-right: 0;
+		.header-top{
+			padding-right: 0;
+		}	
 		}
   }
   .first-screen{
