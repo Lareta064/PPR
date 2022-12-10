@@ -16,6 +16,8 @@
 		padding: 34px;
 		padding-left: 80px;
 		padding-right: 80px;
+		transform: translateX(100%);
+		
 		[frame-close]{
 			position: absolute;
 			top: 34px;
@@ -49,10 +51,18 @@
 	overflow: hidden;
 	overflow-y: auto;
 	background-color: rgba(39, 44, 51, .5);
+
 	
 }
-[frame-modal].visible{
+.modal-frame-wrapper[frame-modal].visible {
 	display: block;
+	.modal-frame{
+		animation-name: openRight;
+		animation-duration: .5s;
+		animation-fill-mode:forwards;
+		animation-delay: .2s;
+	}
+	
 }
 
 [frame-close]{cursor:pointer}
@@ -63,5 +73,14 @@
 	
 	100%{
 		opacity: 1;
+	}
+}
+@keyframes openRight{
+	0%{
+		transform: translateX(100%);
+	}
+	
+	100%{
+		transform: translateX(0);
 	}
 }

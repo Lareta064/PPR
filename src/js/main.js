@@ -3,11 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	/*  fybvbhjdfybt ымп  vivus.js*/
 	const headerSvg1 = document.querySelector('#header-svg');
 	const serviceSvg = document.querySelector('#service-svg');
-	const factorSvg1 = document.querySelector('#factor1');
-	const factorSvg2 = document.querySelector('#factor2');
-	const factorSvg3 = document.querySelector('#factor3');
-	const factorSvg4 = document.querySelector('#factor4');
-	const factorSvg5 = document.querySelector('#factor5');
+
 	if(headerSvg1){
 		new Vivus(
 			'header-svg',
@@ -27,51 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			);
 		}
 	
-	if(factorSvg1){
-		new Vivus(
-			'factor1',
-			{
-				type: 'delayed',
-				duration: 100,
-			}
-		);
-	}
-	if(factorSvg2){
-		new Vivus(
-			'factor2',
-			{
-				type: 'delayed',
-				duration: 100,
-			}
-		);
-	}
-	if(factorSvg3){
-		new Vivus(
-			'factor3',
-		{
-			type: 'delayed',
-			duration: 100,
-		}
-	);
-	}
-	if(factorSvg4){
-		new Vivus(
-			'factor4',
-		{
-			type: 'delayed',
-			duration: 100,
-		}
-	);
-	}
-	if(factorSvg5){
-		new Vivus(
-			'factor5',
-		{
-			type: 'delayed',
-			duration: 100,
-		}
-	);
-	}
+
 	// MENU
 	const menuToggle = document.querySelector('.menu-toggle');
 	const mobMenu = document.querySelector('#header-menu');

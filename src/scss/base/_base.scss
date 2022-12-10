@@ -15,6 +15,7 @@
 	line-height: 1.4;
 	font-size: 16px;	
 	font-family: 'Montserrat';
+	background-color: #fff;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 
@@ -52,6 +53,38 @@
 		@media (max-width: 1199px) {
 		padding-right: 0;
 		}
+  }
+  .first-screen{
+	
+	display: flex;
+	flex-direction: column;
+	&>*{width: 100%;}
+	padding-bottom: 180px;
+	.main-service{margin-top: auto;}
+	height: 1080px;
+	@media(max-width: 1599px){
+		height: 864px;
+		padding-bottom: 100px;
+		
+	}
+	
+	@media(max-width: 1535px){
+		height: 900px;
+		
+	}
+	@media(max-width: 1439px){
+		height: 768px;
+		
+	}
+	@media(max-width: 1364px){
+		height: 800px;
+		
+	}
+	@media(max-width: 1023px){
+		height: unset;
+		padding-bottom: 60px;
+		
+	}
   }
   #overlay{
 	position: fixed;
@@ -163,7 +196,14 @@ section+section{
 		padding-top: 100px;
 	}
 }
+.pb-180{
+	padding-bottom: 180px;
+	@media (max-width: 767px) {
+		
+		padding-bottom: 60px;
+	}
 
+}
 .section-gray{
 	background-color: $sec3;
 }
