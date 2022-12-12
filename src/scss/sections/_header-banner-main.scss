@@ -1,10 +1,13 @@
 .header-banner{
 	padding-top: 156px;
 	padding-bottom: 55px;
+	
 	object, img{
 		height: 100%;
 		width: auto;
 		object-fit: contain;
+		position: relative;
+		z-index: 1;
 	}
 	@media(max-width:1364px){
 		padding-bottom: 25px;
@@ -24,6 +27,8 @@
 		padding-bottom: 55px;
 		max-width: 821px;
 		width: 70%;
+		position: relative;
+		z-index: 2;
 		.h8{
 			max-width: 404px;
 			margin-top: 20px;
