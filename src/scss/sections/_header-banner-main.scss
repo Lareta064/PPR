@@ -1,13 +1,15 @@
 .header-banner{
 	padding-top: 156px;
 	padding-bottom: 55px;
-	
+	@media(max-width:1364px){
+		padding-top: 125px;
+	}
 	object, img{
 		height: 100%;
 		width: auto;
 		object-fit: contain;
-		position: relative;
-		z-index: 1;
+		
+		
 	}
 	@media(max-width:1364px){
 		padding-bottom: 25px;
@@ -56,6 +58,8 @@
 	bottom: 0;
 	right: 0;
 	top: 20px;
+	z-index: 1;
+	
 	@media(max-width:1199px){
 		display: none;
 	}

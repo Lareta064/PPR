@@ -74,25 +74,18 @@
 		
 	}
 	
-	@media(max-width: 1535px){
-		// height: 900px;
-		
-	}
-	@media(max-width: 1439px){
-		// height: 768px;
-		
-	}
-	@media(max-width: 1364px){
-		// height: 800px;
-		
-	}
 	@media(max-width: 1199px){
 		min-height: unset;
 		
 	}
-	@media(max-width: 1023px){
-		// padding-bottom: 60px;
-		
+	
+  }
+  .first-screen.first-screen--inner{
+		@media(max-width: 1599px){
+		min-height: 100vh;
+	}
+	@media(max-width: 1199px){
+		min-height: unset;
 	}
   }
   .in-view.anim-box{

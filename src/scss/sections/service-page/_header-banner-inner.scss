@@ -11,6 +11,9 @@
 			width: auto;
 			object-fit: contain;
 			height:100%;
+			@media(max-width:1439px){
+			height: 500px;
+		}
 		}
 	}
 	@media (max-width: 1199px) {
