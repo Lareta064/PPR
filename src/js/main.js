@@ -120,8 +120,45 @@ document.addEventListener("DOMContentLoaded", function(){
 			bodyEl.classList.remove('noscroll');
 
 		});
+		overlayBlock.addEventListener('click', function () {
+			mobMenu.classList.remove('active');
+			menuToggle.classList.remove('active');
+			this.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+
+		});
 	}
-     
+     /* блок с услугами на моб версии показать/скрыть по клику  */
+	const customDrop = document.querySelectorAll('.customDrop');
+		if(customDrop.length > 0){
+			for(let i=0; i< customDrop.length; i++){
+				customDrop[i].addEventListener('click', function(){
+					for(let k=0; k< customDrop.length; k++){
+						
+						if(k !=i){
+							customDrop[k].classList.remove('active');
+						}
+						else{
+							if(customDrop[k].classList.contains('active')){
+								customDrop[k].classList.remove('active');
+							}
+							else{
+								customDrop[k].classList.add('active');
+							}
+						}
+					}
+					
+				});
+			}
+		window.addEventListener('click', function(e){
+			if (!e.target.closest('.customDrop') && !e.target.classList.contains('customDrop')){
+				for(let j=0; j< customDrop.length; j++){
+					customDrop[j].classList.remove('active');
+					console.log('555');
+				}
+			}
+		});
+	}
 	/*класс в зависимости от количества карточек*/
 	void function MyFunction(){
 		const container = document.querySelector('.price-cards');
