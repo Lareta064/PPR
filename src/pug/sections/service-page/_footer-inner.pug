@@ -23,13 +23,25 @@ footer.footer
 							svg.svg-mail
 								use(href="./img/svg-sprite.svg#svg-mail")
 					
-					.icon-elem(frame-btn="modal-form")
-						.text-bold.text-16.fl-col
-							a(href="#!") +7 999 888 77 66
-						
-						.circle-icon
-							svg.svg-call
-								use(href="./img/svg-sprite.svg#svg-call")
+					//======== телефон для экранов от 1200
+					.flex-none-1200
+						a(href="#!" frame-btn="modal-form").icon-elem
+							.text-bold.text-16.fl-col
+								span +7 999 888 77 66
+							
+							.circle-icon
+								svg.svg-call
+									use(href="./img/svg-sprite.svg#svg-call")
+										.d-none.d-1200-flex
+					//========телефон для экранов от 360 до 1199
+					.flex-block-1199
+						a(href="tel: +79998887766" ).icon-elem
+							.text-bold.text-16.fl-col
+								span +7 999 888 77 66
+							
+							.circle-icon
+								svg.svg-call
+									use(href="./img/svg-sprite.svg#svg-call")
 
 		.footer-copyright
 			p.text-14.text-gray © ООО "Научно-производственное предприятие нефтяного машиностроения" | Все права защищены | 2022

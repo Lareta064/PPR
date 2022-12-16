@@ -50,3 +50,18 @@
 	}
 	
 }
+
+.flex-block-1199{
+	display: none!important;
+	@media(max-width:1199px){
+		display: flex!important;
+	}
+	
+}
+.flex-none-1200{
+	display: flex!important;
+	@media(max-width:1199px){
+		display: none!important;
+	}
+	
+}
