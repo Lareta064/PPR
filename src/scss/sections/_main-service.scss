@@ -95,7 +95,8 @@
 	padding: 30px;
 	padding-bottom: 20px;
 	height: 334px;
-	display: none;
+	// display: none;
+	display: block;
 	opacity: 0;
 	@media (max-width: 1199px) {
 		bottom:0;
